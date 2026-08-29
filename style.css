@@ -430,6 +430,33 @@ button:hover {
     margin-top: 25px;
 }
 
+.about-message-box {
+    margin-top: 25px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-message-box h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.about-message-box p {
+    margin: 0 0 16px;
+}
+
+.about-message-box p:last-child {
+    margin-bottom: 0;
+}
+
+.about-message-signoff {
+    color: #2563eb;
+}
+
 
 /* ================================= */
 /* FOOTER */
