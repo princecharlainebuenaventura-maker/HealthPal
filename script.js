@@ -1506,7 +1506,7 @@ function createSymptomList() {
 
 
     Object.values(conditions)
-        .slice(0, MAX_RESULTS)
+        .slice(0, MAX_CONDITIONS)
         .forEach(condition => {
 
             condition.symptoms.forEach(symptom => {
@@ -2374,4 +2374,3 @@ document.addEventListener(
 createSuggestionBox();
 
 createSymptomList();
-
