@@ -452,7 +452,7 @@ footer {
     z-index: 1100;
     padding: 6px 10px;
     border-radius: 999px;
-    background: rgba(17, 24, 39, 0.9);
+    background: rgba(17, 24, 39, 0.75);
     color: white;
     font-size: 12px;
     font-weight: bold;
