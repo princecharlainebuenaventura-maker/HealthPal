@@ -49,6 +49,117 @@ const MAX_CONDITIONS = 40;
 
 const conditions = {
 
+    
+
+   shingles: {
+    name: "Shingles",
+    symptoms: [
+        "Painful skin sensation",
+        "Burning or tingling",
+        "Skin rash",
+        "Blisters",
+        "Itching",
+        "Headache",
+        "Fever"
+    ]
+}, 
+
+    roseola: {
+    name: "Roseola",
+    symptoms: [
+        "High fever",
+        "Skin rash",
+        "Irritability",
+        "Mild cough",
+        "Runny nose",
+        "Swollen eyelids"
+    ]
+},
+
+    fifthDisease: {
+    name: "Fifth Disease",
+    symptoms: [
+        "Mild fever",
+        "Runny nose",
+        "Headache",
+        "Fatigue",
+        "Joint pain",
+        "Skin rash"
+    ]
+},
+
+    whoopingCough: {
+    name: "Whooping Cough (Pertussis)",
+    symptoms: [
+        "Severe coughing fits",
+        "Runny nose",
+        "Nasal congestion",
+        "Fever",
+        "Fatigue",
+        "Vomiting after coughing"
+    ]
+},
+
+    laryngitis: {
+    name: "Laryngitis",
+    symptoms: [
+        "Hoarse voice",
+        "Loss of voice",
+        "Sore throat",
+        "Cough",
+        "Throat irritation"
+    ]
+},
+
+    croup: {
+    name: "Croup",
+    symptoms: [
+        "Barking cough",
+        "Hoarse voice",
+        "Runny nose",
+        "Fever",
+        "Noisy breathing"
+    ]
+},
+
+    bronchiolitis: {
+    name: "Bronchiolitis",
+    symptoms: [
+        "Cough",
+        "Runny nose",
+        "Stuffy nose",
+        "Fever",
+        "Wheezing",
+        "Fast breathing",
+        "Difficulty feeding"
+    ]
+},
+
+   mononucleosis: {
+    name: "Mononucleosis (Mono)",
+    symptoms: [
+        "Fatigue",
+        "Sore throat",
+        "Fever",
+        "Swollen lymph nodes",
+        "Headache",
+        "Body aches"
+    ]
+},
+
+bronchiolitis: {
+    name: "Bronchiolitis",
+    symptoms: [
+        "Cough",
+        "Runny nose",
+        "Stuffy nose",
+        "Fever",
+        "Wheezing",
+        "Fast breathing",
+        "Difficulty feeding"
+    ]
+}, 
+
     "scarlet fever": {
 
     keywords: [
