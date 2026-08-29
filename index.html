@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health Helper</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h2 class="logo">Health Helper 🩺</h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#search">Search</a>
+                <a href="#symptoms">Symptom Checker</a>
+                <a href="#about-owner">About the Owner</a>
+            </div>
+
+            <div id="clock" class="nav-clock"></div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ============================= -->
+        <!-- HOME -->
+        <!-- ============================= -->
+
+        <section id="home" class="hero">
+
+            <div class="beta-warning">
+
+                ⚠️ <strong>THIS IS A BETA TEST</strong>
+
+                <br>
+
+                Please consult a doctor if your sickness
+                or symptoms are not listed here.
+
+            </div>
+
+            <h1>Welcome to Health Helper 🩺</h1>
+
+            <p>
+                Learn about health conditions, symptoms,
+                and when it may be appropriate to seek
+                professional medical care.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#search" class="button">
+                    Search Conditions
+                </a>
+
+                <a href="#symptoms" class="button secondary-button">
+                    Check Symptoms
+                </a>
+
+                <a href="#about-owner" class="button secondary-button">
+                    About the Owner
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- CONDITION SEARCH -->
+        <!-- ============================= -->
+
+        <section id="search" class="search-section">
+
+            <h2>Search a Condition</h2>
+
+            <p>
+                Already know a condition or symptom?
+                Search for information about it.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="conditionInput"
+                    placeholder="Example: cold"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+                <button id="clearButton" class="clear-button">
+                    Clear
+                </button>
+
+            </div>
+
+            <div id="results"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- SYMPTOM CHECKER -->
+        <!-- ============================= -->
+
+        <section id="symptoms" class="symptom-section">
+
+            <h2>🤔 I Don't Know What I Have</h2>
+
+            <p>
+                Select the symptoms you are experiencing.
+            </p>
+
+            <div class="symptom-warning">
+
+                ⚠️ This tool cannot diagnose you.
+                It only shows conditions that may share
+                some of the symptoms you select.
+
+            </div>
+
+
+            <div id="symptomList" class="symptom-list"></div>
+
+
+            <div class="symptom-buttons">
+
+                <button id="checkSymptomsButton" class="button">
+                    Check Symptoms
+                </button>
+
+                <button id="clearSymptomsButton" class="clear-button">
+                    Clear Symptoms
+                </button>
+
+            </div>
+
+
+            <div id="symptomResults"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- ABOUT OWNER -->
+        <!-- ============================= -->
+
+        <section id="about-owner" class="owner-section">
+
+            <h2>About the Owner</h2>
+
+            <div class="owner-card">
+
+                <h3>Hello! 👋</h3>
+
+                <p>
+                    I'm the creator of Health Helper.
+                </p>
+
+                <p>
+                    I made this project to create a simple
+                    place where people can learn about health
+                    conditions and symptoms.
+                </p>
+
+                <p>
+                    Health Helper is still a work in progress.
+                    I'm continuing to improve the website,
+                    design, and health-information database.
+                </p>
+
+                <p>
+                    Thanks for checking out my project! ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- IMPORTANT INFORMATION -->
+        <!-- ============================= -->
+
+        <section class="about">
+
+            <h2>Important Information</h2>
+
+            <p>
+                Health Helper is an educational project.
+                It does not diagnose illnesses, prescribe
+                treatment, or replace professional medical advice.
+            </p>
+
+            <div class="warning">
+
+                ⚠️ <strong>IMPORTANT</strong>
+
+                <br><br>
+
+                This is a beta test. If your symptoms aren't
+                listed here, please consult a qualified
+                healthcare professional.
+
+                <br><br>
+
+                If you have severe or rapidly worsening
+                symptoms, seek appropriate medical care
+                instead of relying on this website.
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Health Helper
+        </p>
+
+        <p>
+            Educational Project • Beta Version
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
