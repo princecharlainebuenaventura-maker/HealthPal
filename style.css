@@ -445,6 +445,22 @@ footer {
     padding: 30px 20px;
 }
 
+.floating-credit {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1100;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(17, 24, 39, 0.9);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+    pointer-events: none;
+}
+
 
 /* ================================= */
 /* MOBILE */
@@ -476,6 +492,12 @@ footer {
 
     .symptom-category-grid {
         grid-template-columns: 1fr;
+    }
+
+    .floating-credit {
+        right: 12px;
+        bottom: 12px;
+        font-size: 11px;
     }
 
 }
