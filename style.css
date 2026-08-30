@@ -1,3 +1,4 @@
+
 /* ================================= */
 /* GENERAL */
 /* ================================= */
@@ -36,7 +37,6 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 15px 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +72,6 @@ header {
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 8px;
-
     transition:
         background 0.2s ease,
         transform 0.2s ease;
@@ -81,6 +80,42 @@ header {
 .nav-links a:hover {
     background: #eef4ff;
     transform: translateY(-1px);
+}
+
+
+/* ================================= */
+/* NEW NAVIGATION BUTTONS */
+/* ================================= */
+
+.nav-button {
+    background: #eef4ff;
+    color: #2563eb;
+    border: 1px solid #dbeafe;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+    background: #dbeafe;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.kid-mode-button {
+    background: #f0fdf4;
+    color: #15803d;
+    border-color: #bbf7d0;
+}
+
+.kid-mode-button:hover {
+    background: #dcfce7;
 }
 
 
@@ -150,7 +185,6 @@ button {
     font-weight: bold;
     border-radius: 10px;
     padding: 12px 18px;
-
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease,
@@ -208,25 +242,19 @@ button:hover {
 
 .search-box {
     width: 100%;
-
     display: flex;
     flex-direction: column;
-
     gap: 10px;
     margin-top: 25px;
 }
 
-#conditionInput  {
+#conditionInput {
     width: 100%;
-
     padding: 14px 16px;
-
     border: 2px solid #d1d5db;
     border-radius: 10px;
-
     font-size: 16px;
     outline: none;
-
     transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease;
@@ -263,20 +291,13 @@ button:hover {
 .result-card,
 .symptom-result-card,
 .owner-card {
-
     background: white;
-
     border: 1px solid #e5e7eb;
-
     border-radius: 16px;
-
     padding: 25px;
-
     margin-top: 20px;
-
     box-shadow:
         0 4px 15px rgba(0, 0, 0, 0.05);
-
     animation:
         resultAppear 0.45s ease both;
 }
@@ -305,7 +326,6 @@ button:hover {
 /* ================================= */
 
 @keyframes resultAppear {
-
     from {
         opacity: 0;
         transform: translateY(18px);
@@ -315,7 +335,6 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
 
@@ -341,34 +360,23 @@ button:hover {
 
 .symptom-category-grid {
     display: grid;
-
     grid-template-columns:
         repeat(
             auto-fit,
             minmax(220px, 1fr)
         );
-
     gap: 10px;
 }
 
 .symptom-option {
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
     background: white;
-
     border: 1px solid #d1d5db;
-
     padding: 12px;
-
     border-radius: 10px;
-
     cursor: pointer;
-
     transition:
         background 0.2s ease,
         transform 0.2s ease,
@@ -387,11 +395,8 @@ button:hover {
 
 .symptom-buttons {
     display: flex;
-
     gap: 10px;
-
     flex-wrap: wrap;
-
     margin-top: 25px;
 }
 
@@ -459,16 +464,156 @@ button:hover {
 
 
 /* ================================= */
+/* WHAT'S NEW MODAL */
+/* ================================= */
+
+.updates-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    background: rgba(17, 24, 39, 0.6);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.updates-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.updates-content {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    animation: resultAppear 0.25s ease both;
+}
+
+.updates-content h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.update-version {
+    margin-top: 20px;
+}
+
+.update-version h3 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.update-version h4 {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.update-version p,
+.previous-updates p {
+    margin-top: 0;
+}
+
+.previous-updates {
+    margin-top: 20px;
+}
+
+.previous-updates h3 {
+    margin-bottom: 12px;
+}
+
+.close-updates {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #1f2937;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.close-updates:hover {
+    background: #e5e7eb;
+}
+
+.update-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* ================================= */
+/* KID-FRIENDLY MODE */
+/* ================================= */
+
+.kid-friendly-info {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 18px;
+}
+
+.kid-friendly-info[hidden] {
+    display: none;
+}
+
+.kid-friendly-info h2 {
+    margin-top: 0;
+    color: #166534;
+}
+
+.kid-friendly-info p {
+    max-width: 800px;
+}
+
+.kid-safety-box {
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 16px;
+    background: #fff7ed;
+    border: 1px solid #fdba74;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+
+/* ================================= */
+/* KID MODE BODY */
+/* ================================= */
+
+body.kid-mode {
+    background: #f0fdf4;
+}
+
+body.kid-mode .hero,
+body.kid-mode .search-section,
+body.kid-mode .symptom-section,
+body.kid-mode .owner-section,
+body.kid-mode .about {
+    transition: background 0.2s ease;
+}
+
+
+/* ================================= */
 /* FOOTER */
 /* ================================= */
 
 footer {
     text-align: center;
-
     background: #111827;
-
     color: white;
-
     padding: 30px 20px;
 }
 
@@ -503,6 +648,11 @@ footer {
         width: 100%;
     }
 
+    .nav-button {
+        width: 100%;
+        max-width: 280px;
+    }
+
     .hero h1 {
         font-size: 32px;
     }
@@ -527,6 +677,30 @@ footer {
         font-size: 11px;
     }
 
+    .updates-modal {
+        padding: 12px;
+    }
+
+    .updates-content {
+        max-height: 92vh;
+        padding: 24px 20px;
+        border-radius: 15px;
+    }
+
+    .updates-content h2 {
+        font-size: 26px;
+        padding-right: 35px;
+    }
+
+    .close-updates {
+        top: 8px;
+        right: 8px;
+    }
+
+    .kid-friendly-info {
+        margin: 20px 12px;
+        padding: 25px 18px;
+    }
 }
 
 
@@ -547,5 +721,4 @@ footer {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-
 }

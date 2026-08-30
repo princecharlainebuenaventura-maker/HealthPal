@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,6 +24,16 @@
                 <a href="#search">Search</a>
                 <a href="#symptoms">Symptom Checker</a>
                 <a href="#about-owner">About the Owner</a>
+
+                <!-- NEW: What's New -->
+                <button id="updatesButton" class="nav-button">
+                    🆕 What's New
+                </button>
+
+                <!-- NEW: Kid-Friendly Mode -->
+                <button id="kidModeButton" class="nav-button kid-mode-button">
+                    🧒 Kid-Friendly Mode
+                </button>
             </div>
 
             <div id="clock" class="nav-clock"></div>
@@ -240,18 +251,13 @@
                     project created to help people learn about common
                     symptoms, conditions, and general health topics
                     through a straightforward and user-friendly
-                    experience. Our goal is to make health information
-                    easier to understand while encouraging users to seek
-                    appropriate professional care when needed.
+                    experience.
                 </p>
 
                 <p>
                     We are committed to building an experience that is
-                    informative, responsible, and designed with users in
-                    mind. As HealthPal continues to grow, we aim to
-                    improve the way people explore general health
-                    information while keeping safety and clarity at the
-                    center of what we do.
+                    informative, responsible, and designed with users
+                    in mind.
                 </p>
 
                 <p>
@@ -285,6 +291,130 @@
     </main>
 
 
+    <!-- ============================= -->
+    <!-- WHAT'S NEW MODAL -->
+    <!-- ============================= -->
+
+    <div
+        id="updatesModal"
+        class="updates-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="updatesTitle"
+    >
+
+        <div class="updates-content">
+
+            <button
+                id="closeUpdates"
+                class="close-updates"
+                aria-label="Close What's New"
+            >
+                &times;
+            </button>
+
+            <h2 id="updatesTitle">🆕 What's New</h2>
+
+            <div class="update-version">
+
+                <h3>HealthPal v1.2</h3>
+
+                <h4>🧒 Kid-Friendly Mode</h4>
+
+                <p>
+                    HealthPal now includes a Kid-Friendly Mode
+                    with simpler explanations and easier-to-understand
+                    health information.
+                </p>
+
+                <h4>🔎 Improved Search</h4>
+
+                <p>
+                    We've improved the search experience to make
+                    finding health topics easier.
+                </p>
+
+                <h4>🩺 More Health Topics</h4>
+
+                <p>
+                    We've added additional health conditions and
+                    educational information.
+                </p>
+
+                <h4>⚠️ Safety Improvements</h4>
+
+                <p>
+                    Safety guidance has been made easier to notice.
+                    HealthPal provides general educational information
+                    and is not a replacement for professional medical care.
+                </p>
+
+            </div>
+
+            <hr>
+
+            <div class="previous-updates">
+
+                <h3>Previous Updates</h3>
+
+                <p>
+                    <strong>v1.1</strong> — Added new health topics,
+                    the About HealthPal section, and other improvements.
+                </p>
+
+                <p>
+                    <strong>v1.0</strong> — Initial HealthPal release.
+                </p>
+
+            </div>
+
+            <p class="update-footer">
+
+                Thanks for using HealthPal! ❤️
+
+                <br><br>
+
+                <strong>— Prince Studios™</strong>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- KID-FRIENDLY INFORMATION -->
+    <!-- ============================= -->
+
+    <section
+        id="kidFriendlyInfo"
+        class="kid-friendly-info"
+        hidden
+    >
+
+        <h2>🧒 Kid-Friendly Mode</h2>
+
+        <p>
+            Welcome to Kid-Friendly Mode!
+        </p>
+
+        <p>
+            HealthPal will use simpler explanations to help
+            make health information easier to understand.
+        </p>
+
+        <div class="kid-safety-box">
+
+            ⚠️ If you're worried about how you feel,
+            tell a parent, guardian, school nurse, doctor,
+            or another trusted adult.
+
+        </div>
+
+    </section>
+
+
     <footer>
 
         <p>
@@ -297,8 +427,12 @@
 
     </footer>
 
-    <div class="floating-credit" aria-hidden="true">
-        Powered By Prince Studios
+
+    <div
+        class="floating-credit"
+        aria-hidden="true"
+    >
+        Powered By Prince Studios™
     </div>
 
 
@@ -307,3 +441,4 @@
 </body>
 
 </html>
+```

@@ -2485,3 +2485,106 @@ document.addEventListener(
 createSuggestionBox();
 
 createSymptomList();
+
+
+
+/* ================================= */
+/* WHAT'S NEW / UPDATE LOG */
+/* ================================= */
+
+const updateLogButton =
+    document.getElementById("updateLogButton");
+
+const updateLog =
+    document.getElementById("updateLog");
+
+const closeUpdateLogButton =
+    document.getElementById("closeUpdateLogButton");
+
+
+/* Open update log */
+
+function openUpdateLog() {
+
+    if (!updateLog) return;
+
+    updateLog.classList.add("show");
+
+    updateLog.setAttribute("aria-hidden", "false");
+
+}
+
+
+/* Close update log */
+
+function closeUpdateLog() {
+
+    if (!updateLog) return;
+
+    updateLog.classList.remove("show");
+
+    updateLog.setAttribute("aria-hidden", "true");
+
+}
+
+
+/* Button events */
+
+if (updateLogButton) {
+
+    updateLogButton.addEventListener(
+        "click",
+        openUpdateLog
+    );
+
+}
+
+
+if (closeUpdateLogButton) {
+
+    closeUpdateLogButton.addEventListener(
+        "click",
+        closeUpdateLog
+    );
+
+}
+
+
+/* Close when clicking outside the update box */
+
+if (updateLog) {
+
+    updateLog.addEventListener(
+        "click",
+        function(event) {
+
+            if (event.target === updateLog) {
+
+                closeUpdateLog();
+
+            }
+
+        }
+    );
+
+}
+
+
+/* Close with Escape */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape" &&
+            updateLog &&
+            updateLog.classList.contains("show")
+        ) {
+
+            closeUpdateLog();
+
+        }
+
+    }
+);
